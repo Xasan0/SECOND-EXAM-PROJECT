@@ -7,6 +7,9 @@ header {
         align-items: center;
         height: 70px;
 
+        .nav__menu {
+            display: none;
+        }
         .nav__items {
             display: flex;
             align-items: center;
@@ -91,7 +94,17 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-    
+    header {
+        .nav {
+            .nav__items {
+                display: none;
+            }
+
+            .nav__menu {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 @font-face {

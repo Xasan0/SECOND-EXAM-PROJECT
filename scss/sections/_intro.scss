@@ -80,6 +80,27 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #intro {
+        .wrapper {
+            display: block;
+
+            .wrapper__left {
+                padding-bottom: 50px;
+
+                .wrapper__left--title {
+                    font-size: 36px;
+                }
+
+                .wrapper__left--desc {
+                    width: 343px;
+                    margin-bottom: 75px;
+                }
+            }
+        }
+    }
+
+}
 
 @font-face {
     font-family: "Inter";

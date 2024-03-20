@@ -65,11 +65,27 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+    #testimonials {
+        .cards__wrapper {
+            display: block;
+            
+            .card {
+                width: 343px;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 24px;
+            }
+        }
 
+    }
+}
 
 @media (prefers-color-scheme: dark) {
     #testimonials {
         background-color: $grey;
+
         .test__info {
             color: $light;
         }
@@ -77,9 +93,11 @@
         .cards__wrapper {
             .card {
                 background-color: $bg-dark;
+
                 h1 {
                     color: $light;
                 }
+
                 .card__info {
                     color: $light;
                 }

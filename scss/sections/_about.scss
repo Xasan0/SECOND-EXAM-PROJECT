@@ -71,6 +71,15 @@
     }
 }
 
+
+@media only screen and (max-width: 600px) {
+    #about {
+        .wrapper {
+            display: block;
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #about {
         background-color: $grey;
@@ -80,6 +89,7 @@
                 h1 {
                     color: $light;
                 }
+
                 .wrapper__right--description {
                     color: $light;
                 }

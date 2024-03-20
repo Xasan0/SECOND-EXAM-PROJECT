@@ -65,6 +65,23 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #contact {
+        .gmail {
+            h1 {
+                font-size: 18px;
+            }
+        }
+
+        .number {
+            h1 {
+                font-size: 18px;
+            }
+        }
+
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #contact {
         background-color: $dark-grey;

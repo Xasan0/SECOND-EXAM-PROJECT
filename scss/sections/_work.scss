@@ -23,6 +23,7 @@
         font-family: "Inter";
         color: $light-grey;
         font-size: 20px;
+        text-align: center;
     }
 
     .cards__wrapper {
@@ -84,6 +85,27 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #work {
+        .cards__wrapper {
+            .work__cards {
+                display: flex;
+                flex-direction: column;
+                width: 380px;
+                height: 862px;
+
+                .img {
+                    img {
+                        width: 303px;
+                        height: 207px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #work {
         background-color: $dark-grey;
@@ -95,9 +117,11 @@
         .cards__wrapper {
             .work__cards {
                 background-color: $grey;
+
                 .img {
                     background-color: $grey;
                 }
+
                 .card__right {
                     h1 {
                         color: $light;
