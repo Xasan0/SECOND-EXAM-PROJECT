@@ -64,15 +64,21 @@
     #intro {
         background-color: $dark-grey;
 
-        .wrapper__left {
-            .wrapper__left--title {
-                color: $light;
-            }
+        .wrapper {
+            padding-left: 40px;
+            .wrapper__left {
 
-            .wrapper__left--desc {
-                color: $light;
+                .wrapper__left--title {
+                    color: $light;
+                }
+
+                .wrapper__left--desc {
+                    color: $light;
+                }
             }
         }
+
+
     }
 
     p {

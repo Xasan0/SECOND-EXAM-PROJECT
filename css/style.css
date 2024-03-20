@@ -47,9 +47,10 @@ header .nav .nav__items img {
 header .nav .nav__items .nav__btn:hover {
   background-color: white;
   border: 1px solid #111827;
+  color: #4B5563;
 }
-header .nav .nav__items .nav__btn a:hover {
-  color: #111827;
+header .nav .nav__items .nav__btn {
+  color: #fff;
 }
 header .nav .nav__items .nav__btn {
   padding: 6px 16px;
@@ -165,10 +166,13 @@ footer .content {
   #intro {
     background-color: #030712;
   }
-  #intro .wrapper__left .wrapper__left--title {
+  #intro .wrapper {
+    padding-left: 40px;
+  }
+  #intro .wrapper .wrapper__left .wrapper__left--title {
     color: #fff;
   }
-  #intro .wrapper__left .wrapper__left--desc {
+  #intro .wrapper .wrapper__left .wrapper__left--desc {
     color: #fff;
   }
   p {

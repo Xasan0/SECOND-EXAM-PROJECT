@@ -45,10 +45,11 @@ header {
             .nav__btn:hover {
                 background-color: white;
                 border: 1px solid $grey;
+                color: $light-grey;
             }
 
-            .nav__btn a:hover {
-                color: $grey;
+            .nav__btn {
+                color: $light;
             }
 
             .nav__btn {
