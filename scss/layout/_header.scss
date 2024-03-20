@@ -1,0 +1,96 @@
+header {
+    width: 100%;
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+
+        .nav__items {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+
+            .nav__items--list {
+                display: flex;
+                gap: 24px;
+
+                .list__item {
+
+
+                    .list__item--link {
+                        text-decoration: none;
+                        color: $light-grey;
+                        font-family: "Inter", sans-serif;
+                    }
+
+                    .list__item--link:hover {
+                        color: $grey;
+                    }
+                }
+
+
+            }
+
+            img {
+                cursor: pointer;
+                border-left: 1px solid #80808056;
+                padding-left: 10px;
+            }
+
+            .nav__btn:hover {
+                background-color: white;
+                border: 1px solid $grey;
+            }
+
+            .nav__btn a:hover {
+                color: $grey;
+            }
+
+            .nav__btn {
+                padding: 6px 16px;
+                border: none;
+                border-radius: 12px;
+                background-color: $grey;
+                height: 35px;
+                cursor: pointer;
+
+
+
+                a {
+                    color: $light;
+                    font-size: 16px;
+                    font-family: "Inter";
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: $dark-grey;
+
+        img {
+            color: $light;
+        }
+
+        .nav__items--list {
+
+            .list__item {
+
+                .list__item--link {
+                    color: $light;
+                }
+
+            }
+        }
+    }
+    
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../../fonts/static/Inter-Medium.ttf);
+}

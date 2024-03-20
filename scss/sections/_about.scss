@@ -1,0 +1,103 @@
+#about {
+    background-color: $bg-grey;
+    padding: 96px 80px;
+
+    .about__title {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 48px;
+
+        h3 {
+            background-color: $bg-grey-200;
+            padding: 4px 20px;
+            border-radius: 12px;
+            font-family: "Inter";
+            font-size: 14px;
+            color: $light-grey;
+        }
+
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 250px;
+
+        .wrapper__left {
+            position: relative;
+            width: 400px;
+
+            .wrapper__left--active {
+                position: absolute;
+                top: -30px;
+                left: -30px;
+                transition: all 0.3s ease;
+
+            }
+
+            .wrapper__left--active:hover {
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .wrapper__right {
+            .wrapper__right--quest {
+                h1 {
+                    font-family: "Inter";
+                    font-size: 30px;
+                    color: $grey;
+                    padding-bottom: 24px;
+                }
+
+                .wrapper__right--description {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    color: $light-grey;
+                    padding-bottom: 16px;
+                }
+
+                .wrapper__right--list {
+                    display: flex;
+                    gap: 20px;
+                    font-family: "Inter";
+                    color: $light-grey;
+                    padding-bottom: 16px;
+                    list-style-type: circle;
+                }
+            }
+        }
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #about {
+        background-color: $grey;
+
+        .wrapper__right {
+
+            .wrapper__right--quest {
+                h1 {
+                    color: $light;
+                }
+
+                p {
+                    color: $light;
+                }
+
+                .wrapper__right--description {
+
+                    color: $light;
+
+                }
+            }
+        }
+
+    }
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(../../fonts/static/Inter-Medium.ttf);
+}

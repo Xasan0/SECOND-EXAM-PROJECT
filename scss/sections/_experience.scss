@@ -1,0 +1,92 @@
+#experience {
+    background-color: $bg-grey;
+
+    padding: 96px 80px;
+
+    .experience__title {
+
+        display: flex;
+        justify-content: center;
+        padding-bottom: 48px;
+
+        h3 {
+            background-color: $bg-grey-200;
+            padding: 4px 20px;
+            border-radius: 12px;
+            font-family: "Inter";
+            font-size: 14px;
+            color: $light-grey;
+        }
+    }
+
+    .experience__info {
+        display: grid;
+        place-content: center;
+        font-family: "Inter";
+        color: $light-grey;
+        font-size: 20px;
+    }
+
+    .cards__wrapper {
+        display: grid;
+        place-content: center;
+        margin-top: 48px;
+        .experience__card:nth-child(3){
+            height: 180px;
+        }
+        .experience__card {
+            background-color: $light;
+            margin-bottom: 48px;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.90px 2.6px;
+            ;
+            display: flex;
+            justify-content: space-between;
+            width: 900px;
+            height: 300px;
+
+            h1 {
+                font-family: "Inter";
+                font-size: 20px;
+                padding-bottom: 15px;
+                color: $grey;
+            }
+
+            p {
+                font-family: "Inter";
+                font-size: 16px;
+                color: $light-grey;
+                padding-bottom: 8px;
+            }
+        }
+    }
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+    #experience {
+        background-color: $grey;
+
+        .experience__info {
+            color: $light;
+        }
+
+        .cards__wrapper {
+            .experience__card {
+                background-color: $bg-dark;
+                h1 {
+                    color: $light;
+                }
+                p {
+                    color: $light;
+                }
+            }
+        }
+
+
+    }
+
+
+}
