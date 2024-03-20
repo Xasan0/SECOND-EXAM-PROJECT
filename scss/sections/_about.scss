@@ -75,21 +75,13 @@
     #about {
         background-color: $grey;
 
-        .wrapper__right {
-
-            .wrapper__right--quest {
+        .wrapper {
+            .wrapper__right {
                 h1 {
                     color: $light;
                 }
-
-                p {
-                    color: $light;
-                }
-
                 .wrapper__right--description {
-
                     color: $light;
-
                 }
             }
         }

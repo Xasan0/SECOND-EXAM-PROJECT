@@ -1,9 +1,8 @@
-#experience {
-    background-color: $bg-grey;
-
+#testimonials {
+    background-color: $bg-light-grey;
     padding: 96px 80px;
 
-    .experience__title {
+    .test__title {
 
         display: flex;
         justify-content: center;
@@ -19,7 +18,7 @@
         }
     }
 
-    .experience__info {
+    .test__info {
         display: grid;
         place-content: center;
         font-family: "Inter";
@@ -28,65 +27,64 @@
     }
 
     .cards__wrapper {
-        display: grid;
-        place-content: center;
-        margin-top: 48px;
-        .experience__card:nth-child(3){
-            height: 180px;
-        }
-        .experience__card {
-            background-color: $light;
-            margin-bottom: 48px;
-            padding: 32px;
-            border-radius: 12px;
-            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.90px 2.6px;
-            
+        display: flex;
+        justify-content: space-between;
+        padding-top: 48px;
+
+        .card {
             display: flex;
-            justify-content: space-between;
-            width: 900px;
-            height: 300px;
+            flex-direction: column;
+            align-items: center;
+            background-color: $light;
+            padding: 48px 48px;
+            width: 373px;
+            height: 430px;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0.50px 3.90px 2.6px;
+
+            .card__info {
+                font-family: "Inter";
+                font-size: 16px;
+                color: $light-grey;
+                padding: 24px 24px;
+            }
 
             h1 {
                 font-family: "Inter";
                 font-size: 20px;
-                padding-bottom: 15px;
                 color: $grey;
             }
 
             p {
                 font-family: "Inter";
-                font-size: 16px;
-                color: $light-grey;
-                padding-bottom: 8px;
+                font-size: 14px;
+                padding-top: 5px;
             }
         }
     }
 
-
 }
 
-@media (prefers-color-scheme: dark) {
-    #experience {
-        background-color: $grey;
 
-        .experience__info {
+
+@media (prefers-color-scheme: dark) {
+    #testimonials {
+        background-color: $grey;
+        .test__info {
             color: $light;
         }
 
         .cards__wrapper {
-            .experience__card {
+            .card {
                 background-color: $bg-dark;
                 h1 {
                     color: $light;
                 }
-                p {
+                .card__info {
                     color: $light;
                 }
             }
         }
-
-
     }
-
 
 }

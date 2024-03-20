@@ -1,0 +1,121 @@
+#work {
+    padding: 96px 80px;
+
+    .work__title {
+
+        display: flex;
+        justify-content: center;
+        padding-bottom: 48px;
+
+        h3 {
+            background-color: $bg-grey-200;
+            padding: 4px 20px;
+            border-radius: 12px;
+            font-family: "Inter";
+            font-size: 14px;
+            color: $light-grey;
+        }
+    }
+
+    .work__info {
+        display: grid;
+        place-content: center;
+        font-family: "Inter";
+        color: $light-grey;
+        font-size: 20px;
+    }
+
+    .cards__wrapper {
+        display: grid;
+        place-content: center;
+        padding-top: 48px;
+
+        .work__cards {
+            width: 1100px;
+            height: 480px;
+            display: flex;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.90px 2.6px;
+            margin-bottom: 48px;
+
+            .img {
+                padding: 48px;
+                background-color: $bg-light-grey;
+                border-radius: 12px;
+            }
+
+            .card__right {
+                padding: 48px;
+
+                h1 {
+                    font-family: "Inter";
+                    font-size: 20px;
+                    color: $grey;
+                }
+
+                .card__info {
+                    font-family: "Inter";
+                    font-size: 16px;
+                    color: $light-grey;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                }
+
+                .titles__wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    padding-bottom: 24px;
+
+                    .card__titles {
+                        background-color: $bg-grey-200;
+                        padding: 4px 20px;
+                        width: 100px;
+                        border-radius: 12px;
+                        font-family: "Inter";
+                        font-size: 14px;
+                        color: $light-grey;
+                        display: grid;
+                        place-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #work {
+        background-color: $dark-grey;
+
+        .work__info {
+            color: $light;
+        }
+
+        .cards__wrapper {
+            .work__cards {
+                background-color: $grey;
+                .img {
+                    background-color: $grey;
+                }
+                .card__right {
+                    h1 {
+                        color: $light;
+                    }
+
+                    .card__info {
+                        color: $light;
+                    }
+
+                    .titles__wrapper {
+                        .card__titles {
+                            background-color: $light-grey;
+                            color: $light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

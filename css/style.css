@@ -80,8 +80,26 @@ header .nav .nav__items .nav__btn a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
+footer {
+  height: 70px;
+  background-color: #F3F4F6;
+}
+footer .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 25px;
+  font-family: "Inter";
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    background-color: #111827;
+  }
+}
 #intro .wrapper {
   display: flex;
   justify-content: space-between;
@@ -211,13 +229,10 @@ header .nav .nav__items .nav__btn a {
   #about {
     background-color: #111827;
   }
-  #about .wrapper__right .wrapper__right--quest h1 {
+  #about .wrapper .wrapper__right h1 {
     color: #fff;
   }
-  #about .wrapper__right .wrapper__right--quest p {
-    color: #fff;
-  }
-  #about .wrapper__right .wrapper__right--quest .wrapper__right--description {
+  #about .wrapper .wrapper__right .wrapper__right--description {
     color: #fff;
   }
 }
@@ -355,6 +370,250 @@ header .nav .nav__items .nav__btn a {
     color: #fff;
   }
   #experience .cards__wrapper .experience__card p {
+    color: #fff;
+  }
+}
+#work {
+  padding: 96px 80px;
+}
+#work .work__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+#work .work__title h3 {
+  background-color: #E5E7EB;
+  padding: 4px 20px;
+  border-radius: 12px;
+  font-family: "Inter";
+  font-size: 14px;
+  color: #4B5563;
+}
+#work .work__info {
+  display: grid;
+  place-content: center;
+  font-family: "Inter";
+  color: #4B5563;
+  font-size: 20px;
+}
+#work .cards__wrapper {
+  display: grid;
+  place-content: center;
+  padding-top: 48px;
+}
+#work .cards__wrapper .work__cards {
+  width: 1100px;
+  height: 480px;
+  display: flex;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.9px 2.6px;
+  margin-bottom: 48px;
+}
+#work .cards__wrapper .work__cards .img {
+  padding: 48px;
+  background-color: #F3F4F6;
+  border-radius: 12px;
+}
+#work .cards__wrapper .work__cards .card__right {
+  padding: 48px;
+}
+#work .cards__wrapper .work__cards .card__right h1 {
+  font-family: "Inter";
+  font-size: 20px;
+  color: #111827;
+}
+#work .cards__wrapper .work__cards .card__right .card__info {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #4B5563;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+#work .cards__wrapper .work__cards .card__right .titles__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 24px;
+}
+#work .cards__wrapper .work__cards .card__right .titles__wrapper .card__titles {
+  background-color: #E5E7EB;
+  padding: 4px 20px;
+  width: 100px;
+  border-radius: 12px;
+  font-family: "Inter";
+  font-size: 14px;
+  color: #4B5563;
+  display: grid;
+  place-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  #work {
+    background-color: #030712;
+  }
+  #work .work__info {
+    color: #fff;
+  }
+  #work .cards__wrapper .work__cards {
+    background-color: #111827;
+  }
+  #work .cards__wrapper .work__cards .img {
+    background-color: #111827;
+  }
+  #work .cards__wrapper .work__cards .card__right h1 {
+    color: #fff;
+  }
+  #work .cards__wrapper .work__cards .card__right .card__info {
+    color: #fff;
+  }
+  #work .cards__wrapper .work__cards .card__right .titles__wrapper .card__titles {
+    background-color: #4B5563;
+    color: #fff;
+  }
+}
+#testimonials {
+  background-color: #F3F4F6;
+  padding: 96px 80px;
+}
+#testimonials .test__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+#testimonials .test__title h3 {
+  background-color: #E5E7EB;
+  padding: 4px 20px;
+  border-radius: 12px;
+  font-family: "Inter";
+  font-size: 14px;
+  color: #4B5563;
+}
+#testimonials .test__info {
+  display: grid;
+  place-content: center;
+  font-family: "Inter";
+  color: #4B5563;
+  font-size: 20px;
+}
+#testimonials .cards__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+#testimonials .cards__wrapper .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 48px 48px;
+  width: 373px;
+  height: 430px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.5px 3.9px 2.6px;
+}
+#testimonials .cards__wrapper .card .card__info {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #4B5563;
+  padding: 24px 24px;
+}
+#testimonials .cards__wrapper .card h1 {
+  font-family: "Inter";
+  font-size: 20px;
+  color: #111827;
+}
+#testimonials .cards__wrapper .card p {
+  font-family: "Inter";
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  #testimonials {
+    background-color: #111827;
+  }
+  #testimonials .test__info {
+    color: #fff;
+  }
+  #testimonials .cards__wrapper .card {
+    background-color: #1F2937;
+  }
+  #testimonials .cards__wrapper .card h1 {
+    color: #fff;
+  }
+  #testimonials .cards__wrapper .card .card__info {
+    color: #fff;
+  }
+}
+#contact {
+  padding: 96px 80px;
+}
+#contact .contact__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+#contact .contact__title h3 {
+  background-color: #E5E7EB;
+  padding: 4px 20px;
+  border-radius: 12px;
+  font-family: "Inter";
+  font-size: 14px;
+  color: #4B5563;
+}
+#contact .contact__info {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-family: "Inter";
+  color: #4B5563;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#contact .gmail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+#contact .gmail h1 {
+  font-family: "Inter";
+  font-size: 36px;
+}
+#contact .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 48px;
+}
+#contact .number h1 {
+  font-family: "Inter";
+  font-size: 36px;
+}
+#contact p {
+  font-family: "Inter";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+#contact .social__logos {
+  display: flex;
+  justify-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  #contact {
+    background-color: #030712;
+  }
+  #contact .contact__info {
+    color: #fff;
+  }
+  #contact .gmail {
+    color: #fff;
+  }
+  #contact .number {
     color: #fff;
   }
 }/*# sourceMappingURL=style.css.map */
