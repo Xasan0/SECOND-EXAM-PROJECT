@@ -420,7 +420,7 @@ footer .content {
   }
   #experience .cards__wrapper .experience__card {
     width: 343px;
-    height: 390px;
+    height: 400px;
     display: flex;
     flex-direction: column;
   }
@@ -616,9 +616,10 @@ footer .content {
 @media only screen and (max-width: 600px) {
   #testimonials .cards__wrapper {
     display: block;
+    padding-right: 30px;
   }
   #testimonials .cards__wrapper .card {
-    width: 343px;
+    width: 323px;
     height: 420px;
     display: flex;
     flex-direction: column;
