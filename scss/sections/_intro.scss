@@ -89,7 +89,9 @@
 @media only screen and (max-width: 600px) {
     #intro {
         .wrapper {
-            display: block;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 25px;
 
             .wrapper__left {
                 padding-bottom: 50px;

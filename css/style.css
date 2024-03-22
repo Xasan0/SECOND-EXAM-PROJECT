@@ -181,7 +181,9 @@ footer .content {
 }
 @media only screen and (max-width: 600px) {
   #intro .wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
   }
   #intro .wrapper .wrapper__left {
     padding-bottom: 50px;
